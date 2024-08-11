@@ -85,7 +85,7 @@ nav ul {
 }
 
 .masthead {
-  background-image: url(../img/masthead.jpg);
+  background-image: url(./img/masthead.jpg);
   width: 100% !important;
   height: 6rem;
   background-size: 100%;
