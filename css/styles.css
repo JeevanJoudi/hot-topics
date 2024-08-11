@@ -1,0 +1,315 @@
+/* color codes
+#FDFDFD - background white,
+#767676 - border colors,
+firebrick - links hover color;
+black 000000 - text color,
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+button {
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "IBM Plex Serif", serif;
+}
+
+p,
+a,
+button {
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo {
+  margin: 0.5em;
+  font-size: 2rem;
+}
+
+nav ul {
+  display: flex;
+  width: 50%;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5em;
+}
+
+.nav-links {
+  display: block;
+  border: black 1px solid;
+  border-radius: 4px;
+  width: 40%;
+  text-align: center;
+}
+
+.nav-links a {
+  padding: 0.5em;
+  display: block;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+}
+
+.nav-links a:hover {
+  color: white;
+  background-color: firebrick;
+  transition: 1s ease-in-out;
+}
+
+.masthead {
+  background-image: url(../img/masthead.jpg);
+  width: 100% !important;
+  height: 6rem;
+  background-size: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.masthead-title {
+  display: flex;
+  margin: auto;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.home-article {
+  margin: 1em;
+}
+
+hr {
+  margin-top: 1rem;
+}
+
+.home-article-content h2 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.home-article-content {
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+}
+
+.home-article img {
+  margin-bottom: 1em;
+  border-radius: 4px;
+}
+
+.portfolio-section {
+  border-top: 1px solid #767676;
+  max-width: 65rem;
+  margin: auto;
+}
+
+.portfolio {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-card {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.portfolio-card img {
+  max-width: 300px;
+  width: max-content;
+  border-radius: 4px;
+}
+
+.portfolio-title {
+  text-align: center;
+  margin: 1rem;
+}
+
+.portfolio-card-title {
+  padding: 0.5rem;
+}
+
+footer {
+  border-top: 1px solid #767676;
+  margin: 1rem;
+  max-width: 65rem;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.copyright {
+  margin: 0.5em 0em;
+  text-align: center;
+}
+
+.footer-social {
+  display: flex;
+  gap: 2em;
+  align-content: center;
+  margin: auto;
+  padding: 0.5rem;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 35rem) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  p,
+  button {
+    font-size: 1rem;
+  }
+
+  nav {
+    flex-direction: row;
+  }
+
+  .nav-links {
+    width: 30%;
+  }
+
+  #logo {
+    margin-left: 1rem;
+  }
+
+  nav ul {
+    justify-content: left;
+    margin-right: 10%;
+  }
+
+  nav ul li {
+    margin-left: 20px;
+  }
+
+  .masthead {
+    height: 7rem;
+  }
+
+  .home-article {
+    overflow: hidden;
+    margin-bottom: 20px;
+    max-width: 65rem;
+    margin: 1em;
+  }
+
+  .home-article-content {
+    overflow: hidden;
+    max-width: 65rem;
+  }
+
+  .home-article img {
+    float: left;
+    margin-right: 20px;
+    width: 40%;
+    max-width: 400px;
+  }
+
+  .portfolio-card {
+    flex: 1 1 50%;
+  }
+
+  .portfolio {
+    justify-content: space-between;
+    max-width: 65rem;
+    margin: auto;
+  }
+
+  .footer-social {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 80rem) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  a,
+  p,
+  button {
+    font-size: 1.25rem;
+  }
+
+  nav {
+    max-width: 65rem;
+    margin: auto;
+  }
+
+  #logo {
+    margin-left: 0%;
+  }
+
+  .nav-links {
+    width: 25%;
+  }
+
+  .masthead {
+    height: 8rem;
+  }
+
+  .masthead-title {
+    max-width: 65rem;
+    justify-content: left;
+  }
+
+  .home-article {
+    max-width: 65rem;
+    margin: auto;
+  }
+
+  .home-article-content h2 {
+    text-align: left;
+    padding-left: 0rem;
+  }
+
+  .portfolio-card {
+    flex: 1 1 33.33%;
+  }
+
+  .footer-social {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
